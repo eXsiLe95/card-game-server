@@ -1,0 +1,40 @@
+{
+  "name": "card-game-server",
+  "version": "0.0.1",
+  "description": "Card Game Server",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "mocha --timeout 2000 --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eXsiLe95/card-game-server.git"
+  },
+  "keywords": [
+    "Express.js",
+    "Game",
+    "Online",
+    "Server",
+    "Card"
+  ],
+  "author": "Lukas Kimpel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eXsiLe95/card-game-server/issues"
+  },
+  "homepage": "https://github.com/eXsiLe95/card-game-server#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/express": "^4.16.0",
+    "@types/mocha": "^5.2.5",
+    "apidoc": "^0.17.7",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "mocha": "^5.2.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  }
+}
