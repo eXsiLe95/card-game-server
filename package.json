@@ -4,6 +4,9 @@
   "description": "Card Game Server",
   "main": "src/server.js",
   "scripts": {
+    "setup": "npm install",
+    "build": "tsc",
+    "build-watch": "tsc --watch",
     "run": "node src/server.js",
     "test": "mocha --timeout 2000 --exit"
   },
