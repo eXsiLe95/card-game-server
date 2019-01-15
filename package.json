@@ -4,10 +4,11 @@
   "description": "Card Game Server",
   "main": "src/server.js",
   "scripts": {
-    "setup": "npm install",
     "build": "tsc",
     "build-watch": "tsc --watch",
+    "lint": "tslint --project .",
     "run": "node src/server.js",
+    "setup": "npm install",
     "test": "mocha --timeout 2000 --exit"
   },
   "repository": {

@@ -2,9 +2,23 @@ language: node_js
 node_js:
   - "10"
 
-before_script:
-  - npm run setup
-  - npm run build
+jobs:
+  include:
+    - stage: build
+      script:
+        - npm run setup
+        - npm run build
+    - stage: lint
+      script:
+        - npm run setup
+        - npm run lint
+    - stage: test
+      script:
+        - npm run setup
+        - npm run build
+        - npm run test
 
-script:
-  - npm run test
+stages:
+  - build
+  - lint
+  - test
