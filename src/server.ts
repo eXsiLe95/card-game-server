@@ -8,7 +8,7 @@ app.use(express.json());
 
 app.listen(Configuration.app.port);
 
-app.all('*', (req: Request, res: Response) => {
+app.get('/', (req: Request, res: Response) => {
     res.status(200).send({message: 'Welcome to Card Game Server'});
 });
 
