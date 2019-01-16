@@ -84,6 +84,7 @@ modules.xml
 
 # End of https://www.gitignore.io/api/webstorm+all
 
+doc
 node_modules
 *.js
 *.js.map
