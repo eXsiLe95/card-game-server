@@ -6,6 +6,7 @@
 
 - [Express](https://expressjs.com/)
 - [Helmet](https://helmetjs.github.io/)
+- [ApiDoc](apidocjs.com)
 
 ## Project setup
 
@@ -34,3 +35,7 @@ To set up this project, different steps are mandatory.
 1. Run `npm run run`
 
 The server is running on `localhost:APP_PORT`.
+
+### Generate docs
+
+1. Run `npm run apidoc` to generate the API documentation

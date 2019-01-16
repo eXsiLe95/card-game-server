@@ -16,10 +16,24 @@ app.use(session(Configuration.session));
 
 app.listen(Configuration.app.port);
 
+/**
+ * @api {get} / App entry point
+ * @apiName GetAppEntry
+ * @apiGroup Server
+ * @apiVersion 0.0.1
+ *
+ * @apiSuccess {String} message A welcome message
+ *
+ * @apiSuccessExample Success-Response:
+ *  HTTP/1.1 200 OK
+ *  {
+ *      "message": "Welcome to Card Game Server"
+ *  }
+ */
 app.get('/', (req: Request, res: Response) => {
     res.status(200).send({message: 'Welcome to Card Game Server'});
 });
 
 Skipbo.init(app);
 
-export {app};
+export { app };
