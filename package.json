@@ -30,6 +30,7 @@
   "homepage": "https://github.com/eXsiLe95/card-game-server#readme",
   "dependencies": {
     "express": "^4.16.4",
+    "express-session": "^1.15.6",
     "helmet": "^3.15.0"
   },
   "devDependencies": {
