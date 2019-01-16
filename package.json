@@ -29,7 +29,8 @@
   },
   "homepage": "https://github.com/eXsiLe95/card-game-server#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "helmet": "^3.15.0"
   },
   "devDependencies": {
     "@types/chai": "^4.1.7",
