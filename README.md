@@ -5,6 +5,7 @@
 ## Technologies used
 
 - [Express](https://expressjs.com/)
+- [Helmet](https://helmetjs.github.io/)
 
 ## Project setup
 
