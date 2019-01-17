@@ -3,10 +3,12 @@ import session = require('express-session');
 import helmet = require('helmet');
 
 import { Request, Response } from 'express';
+import { Db, MongoClient, MongoError } from 'mongodb';
 import { Configuration } from '../config/config';
 import { Skipbo } from './games/skipbo';
 
 const app = express();
+const database = initDatabase();
 
 app.set('trust proxy', 1);
 
@@ -15,6 +17,16 @@ app.use(express.json());
 app.use(session(Configuration.session));
 
 app.listen(Configuration.app.port);
+
+function initDatabase(): Db {
+    MongoClient.connect(Configuration.mongodb.url, Configuration.mongodb.options)
+        .then((client: MongoClient) => {
+            return client.db(Configuration.mongodb.databaseName);
+        })
+        .catch((error: MongoError) => {
+            // TODO: Handle database error
+        });
+}
 
 /**
  * @api {get} / App entry point

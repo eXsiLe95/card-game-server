@@ -4,6 +4,14 @@ export class Configuration {
         port: process.env.APP_PORT,
     };
 
+    public static mongodb = {
+        databaseName: process.env.MONGODB_NAME,
+        options: {
+            useNewUrlParser: true,
+        },
+        url: process.env.MONGODB_URL,
+    };
+
     public static session = {
         cookie: {
             domain: process.env.SESSION_COOKIE_DOMAIN,
